@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 
+
   :root { --navy:#0d2a54; --gold:#c9952a; --gold-light:#f0b93a;
     --oranje:#FF6600; --off-white:#f7f5f0; --gray:#e8e4dc; }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -16,6 +17,7 @@
     display:flex; flex-direction:column; align-items:center; gap:12px; }
   .logo-wrap { background:white; border-radius:14px; padding:10px 20px;
     box-shadow:0 4px 20px rgba(0,0,0,.3); }
+  .logo-wrap img { max-height:60px; width:auto; display:block; }
   .header-title { text-align:center; }
   .header-title h1 { font-family:'Bebas Neue',sans-serif; font-size:3rem;
     color:white; letter-spacing:.06em; }
@@ -34,6 +36,31 @@
   footer { background:var(--navy); color:rgba(255,255,255,.5); text-align:center;
     padding:16px; font-size:.8rem; margin-top:20px; }
   footer strong { color:#c9952a; }
+
+  .table-wrap { background:white; border-radius:16px; overflow:hidden;
+    box-shadow:0 2px 16px rgba(13,42,84,.08); overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; min-width:560px; }
+  thead tr { background:var(--navy); }
+  thead th { padding:11px 12px; color:white; font-size:.82rem; font-weight:700;
+    letter-spacing:.04em; text-align:center; text-transform:uppercase; }
+  thead th.left { text-align:left; }
+  thead th.gold { background:var(--gold); color:var(--navy); }
+  tbody tr { border-bottom:1px solid var(--gray); }
+  tbody tr:hover { background:#f0eee8; }
+  tbody tr.rank-1 { background:#fff8e1; }
+  tbody tr.rank-2 { background:#f5f5f5; }
+  tbody tr.rank-3 { background:#fdf1e0; }
+  tbody td { padding:10px 12px; font-size:.9rem; text-align:center; }
+  td.naam { text-align:left; font-weight:600; }
+  td.totaal { font-weight:700; color:var(--navy); font-size:1rem; }
+  td.tb { font-size:.8rem; color:#888; }
+  td.prijs { font-weight:700; color:var(--gold); font-size:.85rem; }
+  .badge { display:inline-flex; align-items:center; justify-content:center;
+    width:26px; height:26px; border-radius:50%; font-weight:700; font-size:.85rem; }
+  .rank-1 .badge { background:#FFD700; color:#5C3D00; }
+  .rank-2 .badge { background:#C0C0C0; color:#333; }
+  .rank-3 .badge { background:#CD7F32; color:white; }
+  .empty { text-align:center; padding:50px; color:#aaa; }
 
   .groepen { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px; }
   .groep-card { background:white; border-radius:14px; overflow:hidden;
@@ -78,19 +105,20 @@
     <a href="speelschema.html">📅 Speelschema</a>
     <a href="https://hotrodradio.nl/" target="_blank">🎙️ Terug naar Hotrodradio</a>
   </div>
-  <div class="update-badge"><span>Laatste update: <strong>26 May 2026 om 18:39</strong></span></div>
+  <div class="update-badge"><span>Laatste update: <strong>12 June 2026 om 17:25</strong></span></div>
+  <p style="text-align:center;font-size:.78rem;color:#888;margin-bottom:12px;font-style:italic;">⚠️ Nog geen uitslagen beschikbaar – volgorde is alfabetisch op naam. Ranglijst wordt actief na de eerste speelronde.</p>
   <div class="groepen">
   <div class="groep-card">
     <div class="groep-hdr" >Groep A </div>
     <div class="wedstrijden">
       <div class="wedstrijd ">
-        <span class="team ">Mexico</span>
-        <span class="score gepland">–</span>
+        <span class="team bold">Mexico</span>
+        <span class="score">2 – 0</span>
         <span class="team right ">South Africa</span>
       </div>
       <div class="wedstrijd ">
-        <span class="team ">South Korea</span>
-        <span class="score gepland">–</span>
+        <span class="team bold">South Korea</span>
+        <span class="score">2 – 1</span>
         <span class="team right ">Tsjechië</span>
       </div>
       <div class="wedstrijd ">
@@ -504,6 +532,6 @@
     background:var(--navy);color:white;border-radius:24px;text-decoration:none;
     font-weight:600;font-size:.88rem;width:fit-content;">↑ Terug naar boven</a>
 </div>
-<footer><strong>WK Poule 2026 – Hotrodradio</strong><br>
+<footer><strong>WK Poule 2026 – Hotrodradio, Den Haag</strong><br>
 Uitslagen worden bijgewerkt na elke speelronde</footer>
 </body></html>
